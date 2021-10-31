@@ -1,0 +1,130 @@
+.post__wrapper {
+  position: relative;
+}
+.post__wrapper .post__nav {
+  position: absolute;
+  bottom: -50px;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+}
+.post__wrapper .post__nav .post__nav__control {
+  background: none;
+  border: none;
+  display: inline;
+  margin: 2px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.post__wrapper .post__nav .post__nav__control::before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: rgba(0,0,0,.2);
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  border-radius: 50%;
+}
+
+.post__wrapper .post__nav .post__nav__control-active {
+  outline: none;
+}
+
+.post__wrapper .post__nav .post__nav__control-active::before {
+  background-color: #f79918;
+}
+
+.post__wrapper .outer {
+  padding: 0!important;
+}
+
+.post__wrapper .post__slider {
+  overflow: hidden;
+}
+
+.post__wrapper .post__slider #post__slider__inner {
+  margin: 0 !important;
+}
+
+.post__wrapper .post__slider .slider {
+  font-size: 0px;
+  white-space: nowrap;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  transition: all 0s;
+}
+
+#posts-slide {
+  /* width: 100%; */
+  width: calc(400%);
+  transition-duration: 0.7s;
+}
+
+#posts-slide > .item {
+  /* width: 100%; */
+  width: calc(25%);
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.post-entry {
+  display: flex;
+}
+
+.post-entry .thumbnail {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 445px;
+  flex: 0 0 445px;
+}
+
+.post-entry .thumbnail img {
+  border-radius: 7px;
+  max-width: 100%;
+  height: auto;
+}
+
+.post-entry .content {
+  align-self: center!important;
+  text-align: left!important;
+  margin-left: 15px;
+}
+
+.post-entry .content .post-meta {
+  margin-bottom: 1rem;
+}
+
+.post-entry .content .category {
+  color: #222;
+  font-weight: bold;
+}
+
+.post-entry .content .date {
+  color: #999;
+}
+
+.post-entry .content .post-author {
+  align-items: center;
+  display: flex;
+}
+
+.post-entry .content .post-author .post-author__pic {
+  margin-right: 10px;
+}
+
+.post-entry .content .post-author .post-author__pic img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  object-fit: cover;
+  object-position: -20% 0;
+}
+
+.post-entry .content .post-author .text {
+  width: 115px;
+}

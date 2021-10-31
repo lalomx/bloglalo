@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lalo Programming</title>
+    <meta name="description" content="A simple HTML5 Template for new projects.">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="container">
+          <div id="nav-toggle" onclick="toggle()">
+            <span id="menu"><i class="fas fa-bars"></i></span>
+            <span id="close"><i class="fas fa-times"></i></span>
+          </div>
+          <div id="nav">
+            <div id="logo">Lalo Programming</div>
+            <nav>
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Resume</a></li>
+                <li><a href="">Topics</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="container">
+          <div class="banner sections container">
+            <div class="banner__left banner__item">
+              <h1>Welcome to my blog!</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur vehicula elit nec imperdiet. Sed eget hendrerit eros. Mauris porttitor pharetra sem luctus iaculis. Aenean quis ex ligula. Cras ornare commodo ex sit amet vehicula. Pellentesque lobortis sem ligula, ut vulputate magna faucibus quis. Etiam congue ex turpis. Donec non leo leo. Nulla interdum dapibus metus, dictum sollicitudin orci auctor sed. Aenean lacinia ex non maximus accumsan. Mauris fermentum lacus egestas urna volutpat, nec fringilla eros finibus.
+              </p>
+            </div>
+            <div class="banner__right banner__item">
+              <img width="100%" src="./img/coding-migi.jpeg" />
+            </div>
+          </div>
+          
+        </section>
+        <section class="new sections">
+          <div class="container">
+            <div class="row justify-center mb-5">
+              <h2 class="heading">Trends</h2>
+            </div>
+            <div class="row post">
+              <div class="post__wrapper">
+                <div class="outer">
+                  <div class="post__nav">
+                    <button type="button" class="post__nav__control"></button>
+                    <button type="button" class="post__nav__control"></button>
+                    <button type="button" class="post__nav__control"></button>
+                    <button type="button" class="post__nav__control post__nav__control-active"></button>
+                  </div>
+                  <div class="post-indicator-hidden">
+                    slide <span class="current">3</span> of 5
+                  </div>
+                </div>
+                <div class="post__slider">
+                  <div class="post__slider__inner" id="post__slider__inner">
+                    <div class="slider" id="posts-slide" style="transform: translate3d(-25%, 0px, 0px);">
+                      <div class="item" id="post-slide-item0">
+                        <article class="post-entry">
+                          <div class="thumbnail">
+                            <a href="">
+                              <img src="img/sleep.jpeg" alt="Image"/>
+                            </a>
+                          </div>
+                          <div class="content">
+                            <div class="post-meta">
+                              <span class="category">Programming</span>
+                              -
+                              <span>July 2, 2021</span>
+                            </div>
+                            <h2 class="heading">Migi is sleeping</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                            <div class="post-author">
+                              <div class="post-author__pic">
+                                <img src="img/me.jpeg" />
+                              </div>
+                              <div class="text">
+                                <strong>Lalo Velazquez</strong>
+                                <span>Programmer</span>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="item" id="post-slide-item1">
+                        <article class="post-entry">
+                          <div class="thumbnail">
+                            <a href="">
+                              <img src="img/sleep.jpeg" alt="Image"/>
+                            </a>
+                          </div>
+                          <div class="content">
+                            <div class="post-meta">
+                              <span class="category">Programming</span>
+                              -
+                              <span>July 2, 2021</span>
+                            </div>
+                            <h2 class="heading">Migi is sleeping</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                            <div class="post-author">
+                              <div class="post-author__pic">
+                                <img src="img/me.jpeg" />
+                              </div>
+                              <div class="text">
+                                <strong>Lalo Velazquez</strong>
+                                <span>Programmer</span>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="item" id="post-slide-item2">
+                        <article class="post-entry">
+                          <div class="thumbnail">
+                            <a href="">
+                              <img src="img/sleep.jpeg" alt="Image"/>
+                            </a>
+                          </div>
+                          <div class="content">
+                            <div class="post-meta">
+                              <span class="category">Programming</span>
+                              -
+                              <span>July 2, 2021</span>
+                            </div>
+                            <h2 class="heading">Migi is sleeping</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                            <div class="post-author">
+                              <div class="post-author__pic">
+                                <img src="img/me.jpeg" />
+                              </div>
+                              <div class="text">
+                                <strong>Lalo Velazquez</strong>
+                                <span>Programmer</span>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="item" id="post-slide-item3">
+                        <article class="post-entry">
+                          <div class="thumbnail">
+                            <a href="">
+                              <img src="img/sleep.jpeg" alt="Image"/>
+                            </a>
+                          </div>
+                          <div class="content">
+                            <div class="post-meta">
+                              <span class="category">Programming</span>
+                              -
+                              <span>July 2, 2021</span>
+                            </div>
+                            <h2 class="heading">Migi is sleeping</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                            <div class="post-author">
+                              <div class="post-author__pic">
+                                <img src="img/me.jpeg" />
+                              </div>
+                              <div class="text">
+                                <strong>Lalo Velazquez</strong>
+                                <span>Programmer</span>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="item" id="post-slide-item3">
+                        <article class="post-entry">
+                          <div class="thumbnail">
+                            <a href="">
+                              <img src="img/sleep.jpeg" alt="Image"/>
+                            </a>
+                          </div>
+                          <div class="content">
+                            <div class="post-meta">
+                              <span class="category">Programming</span>
+                              -
+                              <span>July 2, 2021</span>
+                            </div>
+                            <h2 class="heading">Migi is sleeping</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                            <div class="post-author">
+                              <div class="post-author__pic">
+                                <img src="img/me.jpeg" />
+                              </div>
+                              <div class="text">
+                                <strong>Lalo Velazquez</strong>
+                                <span>Programmer</span>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="item" id="post-slide-item3">
+                        <article class="post-entry">
+                          <div class="thumbnail">
+                            <a href="">
+                              <img src="img/sleep.jpeg" alt="Image"/>
+                            </a>
+                          </div>
+                          <div class="content">
+                            <div class="post-meta">
+                              <span class="category">Programming</span>
+                              -
+                              <span>July 2, 2021</span>
+                            </div>
+                            <h2 class="heading">Migi is sleeping</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                            <div class="post-author">
+                              <div class="post-author__pic">
+                                <img src="img/me.jpeg" />
+                              </div>
+                              <div class="text">
+                                <strong>Lalo Velazquez</strong>
+                                <span>Programmer</span>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+          
+        </section>
+        <section class="recent sections">
+          <div class="container">
+            <div class="row">
+              <h2 class="heading">Recent</h2>
+            </div>
+            <div class="row">
+              <article class="col post-entry">
+                <div class="entry">
+                  <a href="#">
+                    <img class="mb-2" src="img/bb.jpeg"/>
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="post-meta">
+                    <span class="category">Programming</span>
+                    -
+                    <span>July 2, 2021</span>
+                  </div>
+                  <h2 class="sub-heading">Migi is sleeping</h2>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                  <div class="post-author">
+                    <div class="post-author__pic">
+                      <img src="img/me.jpeg" />
+                    </div>
+                    <div class="text">
+                      <strong>Lalo Velazquez</strong>
+                      <span>Programmer</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="col post-entry">
+                <div class="entry">
+                  <a href="#">
+                    <img class="mb-2" src="img/bb.jpeg"/>
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="post-meta">
+                    <span class="category">Programming</span>
+                    -
+                    <span>July 2, 2021</span>
+                  </div>
+                  <h2 class="sub-heading">Migi is sleeping</h2>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                  <div class="post-author">
+                    <div class="post-author__pic">
+                      <img src="img/me.jpeg" />
+                    </div>
+                    <div class="text">
+                      <strong>Lalo Velazquez</strong>
+                      <span>Programmer</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="col post-entry">
+                <div class="entry">
+                  <a href="#">
+                    <img class="mb-2" src="img/bb.jpeg"/>
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="post-meta">
+                    <span class="category">Programming</span>
+                    -
+                    <span>July 2, 2021</span>
+                  </div>
+                  <h2 class="sub-heading">Migi is sleeping</h2>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                  <div class="post-author">
+                    <div class="post-author__pic">
+                      <img src="img/me.jpeg" />
+                    </div>
+                    <div class="text">
+                      <strong>Lalo Velazquez</strong>
+                      <span>Programmer</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        
+      </main>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-2 footer-item">
+              <h3 class="footer-heading">Hi</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur vehicula elit nec imperdiet. Sed eget hendrerit eros. Mauris porttitor pharetra sem luctus iaculis. Aenean quis ex ligula. Cras ornare commodo ex sit amet vehicula. Pellentesque lobortis sem ligula, ut vulputate magna faucibus quis. Etiam congue ex turpis. Donec non leo leo. Nulla interdum dapibus metus, dictum sollicitudin orci auctor sed. Aenean lacinia ex non maximus accumsan. Mauris fermentum lacus egestas urna volutpat, nec fringilla eros finibus.
+              </p>
+            </div>
+            <div class="col footer-item">
+              <img src="img/broly.jpeg"/>
+            </div>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+  <script>
+    function toggle() {
+      document.querySelector("#nav").classList.toggle("open");
+      document.querySelector("#nav-toggle").classList.toggle("overlay");
+      document.querySelector("#nav-toggle #menu").classList.toggle("fade-out");
+      document.querySelector("#nav-toggle").classList.toggle("overlay-fade-in");
+      document.querySelector("#app").classList.toggle("overflow-hidden");
+    }
+  </script>
+  </body>
+</html>

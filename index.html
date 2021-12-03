@@ -59,10 +59,10 @@
               <div class="post__wrapper">
                 <div class="outer">
                   <div class="post__nav">
-                    <button type="button" class="post__nav__control"></button>
-                    <button type="button" class="post__nav__control"></button>
-                    <button type="button" class="post__nav__control"></button>
-                    <button type="button" class="post__nav__control post__nav__control-active"></button>
+                    <button type="button" class="post__nav__control" onclick="navClick(this, 0)"></button>
+                    <button type="button" class="post__nav__control" onclick="navClick(this, 1)"></button>
+                    <button type="button" class="post__nav__control" onclick="navClick(this, 2)"> </button>
+                    <button type="button" class="post__nav__control" onclick="navClick(this, 3)"></button>
                   </div>
                   <div class="post-indicator-hidden">
                     slide <span class="current">3</span> of 5
@@ -195,6 +195,31 @@
               <h2 class="heading">Recent</h2>
             </div>
             <div class="row">
+              <article class="col post-entry">
+                <div class="entry">
+                  <a href="#">
+                    <img class="mb-2" src="img/bb.jpeg"/>
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="post-meta">
+                    <span class="category">Programming</span>
+                    -
+                    <span>July 2, 2021</span>
+                  </div>
+                  <h2 class="sub-heading">Migi is sleeping</h2>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                  <div class="post-author">
+                    <div class="post-author__pic">
+                      <img src="img/me.jpeg" />
+                    </div>
+                    <div class="text">
+                      <strong>Lalo Velazquez</strong>
+                      <span>Programmer</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
               <article class="col post-entry">
                 <div class="entry">
                   <a href="#">
